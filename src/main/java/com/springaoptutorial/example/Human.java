@@ -46,4 +46,12 @@ public class Human {
         System.out.println(" executed method : "+joinPoint.getSignature().getName());
         System.out.println(" returned value from executed method : "+value);
     }
+
+    //AfterThrowing annotation can be used to log the exception in db
+
+    @AfterThrowing(pointcut = "execution( int doOperation(..))" , throwing = "ex")
+    public void exceptionAdvise(JoinPoint joinPoint,Exception ex){
+        System.out.println(" executed method : "+joinPoint.getSignature().getName());
+        System.out.println(" exception occur in executed method : "+ex);
+    }
 }

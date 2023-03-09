@@ -28,4 +28,12 @@ public class DemoController {
 
         return result;
     }
+
+    @GetMapping("/do-operation")
+    public int operation(){
+
+        int result = student.doOperation(5,6);
+
+        return result;
+    }
 }

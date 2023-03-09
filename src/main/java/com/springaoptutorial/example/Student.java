@@ -18,4 +18,8 @@ public class Student {
     public int doingHomework(int a, int b){
         return a+b;
     }
+
+    public int doOperation(int a, int b){
+        return a/0;
+    }
 }
