@@ -14,4 +14,8 @@ public class Student {
         System.out.println("Reading books ... ");
         return a+b;
     }
+
+    public int doingHomework(int a, int b){
+        return a+b;
+    }
 }

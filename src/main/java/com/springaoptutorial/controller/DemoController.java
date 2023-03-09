@@ -18,7 +18,14 @@ public class DemoController {
 
         student.study(4,12);
 
-
         return "test";
+    }
+
+    @GetMapping("/homework")
+    public int homework(){
+
+       int result = student.doingHomework(8,9);
+
+        return result;
     }
 }
