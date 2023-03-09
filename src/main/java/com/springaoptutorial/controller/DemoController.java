@@ -16,7 +16,7 @@ public class DemoController {
     @GetMapping("/test")
     public String test(){
 
-        student.study();
+        student.study(4,12);
 
 
         return "test";
