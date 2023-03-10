@@ -36,4 +36,13 @@ public class DemoController {
 
         return result;
     }
+
+
+    @GetMapping("/do-multiplication")
+    public int multiplication(){
+
+        int result = student.calculateMultiplication(5,6);
+
+        return result;
+    }
 }

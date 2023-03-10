@@ -22,4 +22,16 @@ public class Student {
     public int doOperation(int a, int b){
         return a/0;
     }
+
+    public int calculateMultiplication(int a , int b){
+
+        try {
+            Thread.sleep(2000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return a*b;
+
+    }
 }
